@@ -1,17 +1,21 @@
 <template>
 
-  <div class="w-full flex justify-center">
-    <input type="text" placeholder="Enter Pokemon name" class="mt-10 p-2 border-blue-500 border-2 text-center" v-model="text"/>
-  </div>
-
-  <div class="mt-10 p-4 flex flex-wrap justify-center">
-    <div class="ml-4 text-2x text-blue-400" v-for="( pokemon, idx ) in filteredPokemons" :key="idx">
-
-      <router-link :to="`/about/${urlIdLookup[pokemon.name]}`">
-        {{pokemon.name}}
-      </router-link>
-      
+  <div class="home">
+    
+    <div class="w-full flex justify-center">
+      <input type="text" placeholder="Enter Pokémon name here..." class="mt-10 p-2 border-blue-500 border-2 w-4/12" v-model="text"/>
     </div>
+
+    <div class="mt-10 p-4 flex flex-col items-center">
+      <div class="pokemon-name p-2 text-xl text-blue-400 font-semibold capitalize" v-for="( pokemon, idx ) in filteredPokemons" :key="idx">
+
+        <router-link :to="`/about/${urlIdLookup[pokemon.name]}`">
+          {{pokemon.name}}
+        </router-link>
+        
+      </div>
+    </div>
+
   </div>
 
 </template>
@@ -59,3 +63,14 @@ export default {
 
 }
 </script>
+
+<style>
+
+.home input { border-radius: 10px; }
+
+.home .pokemon-name:hover {
+  color: white;
+  background-color: rgba(59, 130, 246, 0.5);
+}
+
+</style>
