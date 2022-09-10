@@ -1,24 +1,14 @@
-# vue-pokemon-picker
+# Pokémon Picker
+Search the name of a Pokémon to get more information about it.
+[ IN PROGRESS ]
 
-## Project setup
-```
-npm install
-```
+<br/>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Demo
+https://carla-ng.github.io/vue-pokemon-picker/
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+<br/>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Credits
+[Program with Erik](https://www.youtube.com/c/ProgramWithErik)
